@@ -23,52 +23,7 @@
 - Clean and responsive web UI.
 - API endpoints for automation, integrations, or mobile apps.
 
----
 
-## 📁 Project Structure
-├── app.py # Main Flask app (breed + disease)
-├── config.yaml # API keys & configs
-├── models/
-│ ├── cattle_breed_classifier_full_model.pth
-│ ├── disease_prediction_model.pkl
-│ └── classes.txt
-├── templates/
-│ ├── dashboard.html
-│ ├── prediction.html
-│ └── disease_result.html
-├── static/
-│ └── style.css
-
-## ⚙️ Setup Instructions
-
-### 1. 🔧 Install Requirements
-
-```bash
-pip install -r requirements.txt
-2. 🧠 Download Models
-Models will be downloaded automatically if not present:
-
-cattle_breed_classifier_full_model.pth
-
-classes.txt
-
-disease_prediction_model.pkl
-
-Make sure the models/ directory exists.
-
-3. 🔑 Gemini API Key
-Create a config.yaml file with your API key:
-
-yaml
-Copy
-Edit
-gemini_api_key: "YOUR_GEMINI_API_KEY"
-▶️ Run the App
-bash
-Copy
-Edit
-python app.py
-Open your browser at http://localhost:5001/
 
 
 
