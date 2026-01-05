@@ -24,7 +24,6 @@ path = Path("models/")
 export_classes_url = "https://drive.google.com/u/0/uc?id=1IaF_zn-RDnsEntYp86F5G7FNlEkQ8KJ_&export=download"
 export_classes_name = "classes.txt"
 
-# Ensure models directory exists
 path.mkdir(parents=True, exist_ok=True)
 
 def download_file(url, dest):
@@ -179,4 +178,5 @@ def predict_manual():
     return redirect(url_for('dashboard'))
 
 if __name__ == '__main__':
+
     app.run(debug=True, host="0.0.0.0", port=5001)
